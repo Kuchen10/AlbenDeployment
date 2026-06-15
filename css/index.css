@@ -1,4 +1,3 @@
-/* Erzwungener Creme-Beige Hintergrund für die ganze Seite */
 body {
   background-color: #f4efe6 !important;
   font-family: "Inter", sans-serif;
@@ -7,7 +6,6 @@ body {
   padding: 0;
 }
 
-/* Hauptcontainer zentriert alles strikt in der Mitte */
 .pagecontent {
   width: 100% !important;
   max-width: 600px !important;
@@ -19,7 +17,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Titel oben zentriert */
 .main-header {
   text-align: center !important;
   margin-bottom: 40px !important;
@@ -33,7 +30,6 @@ h1 {
   margin: 0;
 }
 
-/* Album Liste */
 .album-list {
   display: flex !important;
   flex-direction: column !important;
@@ -41,7 +37,6 @@ h1 {
   width: 100% !important;
 }
 
-/* Album Boxen */
 .album {
   display: flex !important;
   flex-direction: column !important;
@@ -53,9 +48,15 @@ h1 {
   width: 100% !important;
   border: 1px solid #e6dfd3 !important;
   box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease !important;
 }
 
-/* Bilder exakt auf 300px Höhe erzwingen */
+.album:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 15px 35px rgba(74, 63, 53, 0.12) !important;
+  border-color: #bfa38a !important;
+}
+
 .image-wrapper {
   width: 100% !important;
   height: 300px !important;
@@ -70,7 +71,6 @@ h1 {
   object-fit: cover !important;
 }
 
-/* Textbereich unter dem Bild (Zentriert) */
 .text-wrapper {
   padding: 30px !important;
   width: 100% !important;
@@ -93,7 +93,6 @@ h2 {
   margin-bottom: 5px;
 }
 
-/* Songliste perfekt mittig ausrichten */
 ol {
   margin: 0 auto !important;
   padding: 0 !important;
@@ -108,21 +107,18 @@ ol li {
   color: #554a40;
 }
 
-/* UNSICHTBARE BUTTONS: Macht aus den Links normale klickbare Texte */
 ol li a {
-  text-decoration: none !important; /* Entfernt die Unterstreichung */
-  color: inherit !important; /* Übernimmt die normale Textfarbe */
-  cursor: pointer; /* Zeigt die Klick-Hand beim Drüberfahren */
+  text-decoration: none !important;
+  color: inherit !important;
+  cursor: pointer;
   transition: color 0.2s ease;
   display: inline-block;
 }
 
-/* Kleiner visueller Effekt beim Drüberfahren (Hover) */
 ol li a:hover {
-  color: #bfa38a !important; /* Text verfärbt sich passend zum Beige-Look */
+  color: #bfa38a !important;
 }
 
-/* Schöne Suchleiste ganz unten */
 .main-footer {
   margin-top: 50px !important;
   width: 100% !important;
@@ -162,9 +158,4 @@ input {
 input:focus {
   outline: none;
   border-color: #bfa38a !important;
-  box-shadow: 0 8px 25px rgba(189, 163, 138, 0.2) !important;
-}
-
-.clear {
-  display: none !important;
-}
+  box-shadow: }
