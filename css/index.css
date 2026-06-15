@@ -1,0 +1,170 @@
+/* Erzwungener Creme-Beige Hintergrund für die ganze Seite */
+body {
+  background-color: #f4efe6 !important;
+  font-family: "Inter", sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hauptcontainer zentriert alles strikt in der Mitte */
+.pagecontent {
+  width: 100% !important;
+  max-width: 600px !important;
+  margin: 50px auto !important;
+  padding: 0 20px;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  box-sizing: border-box;
+}
+
+/* Titel oben zentriert */
+.main-header {
+  text-align: center !important;
+  margin-bottom: 40px !important;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 36px;
+  color: #4a3f35;
+  margin: 0;
+}
+
+/* Album Liste */
+.album-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 35px !important;
+  width: 100% !important;
+}
+
+/* Album Boxen */
+.album {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  background: #ffffff !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06) !important;
+  width: 100% !important;
+  border: 1px solid #e6dfd3 !important;
+  box-sizing: border-box;
+}
+
+/* Bilder exakt auf 300px Höhe erzwingen */
+.image-wrapper {
+  width: 100% !important;
+  height: 300px !important;
+  max-height: 300px !important;
+  background-color: #eae3d5;
+  overflow: hidden;
+}
+
+.cover-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Textbereich unter dem Bild (Zentriert) */
+.text-wrapper {
+  padding: 30px !important;
+  width: 100% !important;
+  box-sizing: border-box;
+  text-align: center !important;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  color: #2c2520;
+}
+
+.artist {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #8c7b6e;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+}
+
+/* Songliste perfekt mittig ausrichten */
+ol {
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: inline-block !important;
+  text-align: left !important;
+  list-style-position: inside !important;
+}
+
+ol li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #554a40;
+}
+
+/* UNSICHTBARE BUTTONS: Macht aus den Links normale klickbare Texte */
+ol li a {
+  text-decoration: none !important; /* Entfernt die Unterstreichung */
+  color: inherit !important; /* Übernimmt die normale Textfarbe */
+  cursor: pointer; /* Zeigt die Klick-Hand beim Drüberfahren */
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+/* Kleiner visueller Effekt beim Drüberfahren (Hover) */
+ol li a:hover {
+  color: #bfa38a !important; /* Text verfärbt sich passend zum Beige-Look */
+}
+
+/* Schöne Suchleiste ganz unten */
+.main-footer {
+  margin-top: 50px !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 18px;
+  font-size: 18px;
+  z-index: 2;
+}
+
+input {
+  border: 2px solid #e6dfd3 !important;
+  background-color: #ffffff !important;
+  font-size: 16px !important;
+  padding: 14px 20px 14px 48px !important;
+  width: 100% !important;
+  border-radius: 30px !important;
+  color: #333 !important;
+  font-family: inherit;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03) !important;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #bfa38a !important;
+  box-shadow: 0 8px 25px rgba(189, 163, 138, 0.2) !important;
+}
+
+.clear {
+  display: none !important;
+}
