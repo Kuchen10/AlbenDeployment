@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="css/index.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <div class="pagecontent">
@@ -44,10 +45,10 @@
                 >
               </li>
               <li>
-              <a
+                <a
                   href="media/Michael Jackson - Beat It (Official Audio).mp3"
-                  target="_blank"
-                  >Beat it</a>
+                  >Beat it</a
+                >
               </li>
               <li>
                 <a
@@ -245,6 +246,20 @@
               </li>
             </ol>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <audio id="audio-player"></audio>
+
+    <div class="bottom-player" id="music-player">
+      <div class="player-info">
+        <span class="player-title" id="current-title">Songname</span>
+        <span class="player-artist" id="current-artist">Künstler</span>
+      </div>
+      <div class="player-controls">
+        <div class="progress-container" id="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
         </div>
       </div>
     </div>
